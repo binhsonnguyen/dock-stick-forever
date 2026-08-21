@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>DockStickForever</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.user.dockstickforever</string>
+	<string>com.binhsonnguyen.dockstickforever</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
