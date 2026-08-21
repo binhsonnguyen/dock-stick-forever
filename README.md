@@ -58,6 +58,7 @@ No `killall Dock`. No flicker. Nothing written to `com.apple.dock`.
 Worth knowing before you install:
 
 - Requires **Accessibility** permission. Every event tap does.
+- Requires macOS 13 or later.
 - Runs a background process (~170 KB, menu bar only, no window).
 - The bottom few points of non-anchored displays become unclickable. At the
   4 pt default this is imperceptible in practice, but if it ever gets in your
@@ -75,10 +76,14 @@ cd dock-stick-forever
 open ~/Applications/"Dock Stick Forever.app"
 ```
 
+`build-app.sh` takes `release` (default, your machine's architecture),
+`universal` (arm64 + x86_64, what the published builds use), or `debug`.
+
 ### From a release
 
 Download the zip from [Releases](../../releases), unzip, and move
-`Dock Stick Forever.app` into `~/Applications`.
+`Dock Stick Forever.app` into `~/Applications`. Builds are universal —
+Apple Silicon and Intel.
 
 The release build is **ad-hoc signed and not notarized** — I do not have a paid
 Apple Developer account. macOS will refuse to open it on first launch. To get
